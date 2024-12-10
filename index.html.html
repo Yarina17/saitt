@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Страв на Різні Заходи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Меню Страв на Різні Заходи</h1>
+        <nav>
+            <ul>
+                <li><a href="#wedding">Весілля</a></li>
+                <li><a href="#corporate">Корпоративи</a></li>
+                <li><a href="#party">Вечірки</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="wedding" class="menu-section">
+        <h2>Меню для Весілля</h2>
+        <div class="menu">
+            <div class="dish">
+                <h3>Курка в соусі</h3>
+                <p>Соковита курка в ніжному соусі з травами.</p>
+            </div>
+            <div class="dish">
+                <h3>Торт "Шоколадний рай"</h3>
+                <p>Шоколадний торт з вершковим кремом.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="corporate" class="menu-section">
+        <h2>Меню для Корпоративу</h2>
+        <div class="menu">
+            <div class="dish">
+                <h3>Коктейль з морепродуктів</h3>
+                <p>Коктейль з креветок та кальмарів, поданий з лимоном.</p>
+            </div>
+            <div class="dish">
+                <h3>Салат з авокадо</h3>
+                <p>Легкий салат з авокадо, томатів та зелені.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="party" class="menu-section">
+        <h2>Меню для Вечірки</h2>
+        <div class="menu">
+            <div class="dish">
+                <h3>Буріто з куркою</h3>
+                <p>Тортилья з курячим філе, соусом і овочами.</p>
+            </div>
+            <div class="dish">
+                <h3>Міні-бургери</h3>
+                <p>Міні-бургери з різними начинками: з яловичиною, куркою та овочами.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Меню для заходів | Розроблено для ваших свят</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section {
+    margin: 40px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dish {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.dish h3 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.dish p {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
